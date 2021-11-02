@@ -1,4 +1,4 @@
-const menuUppercase = document.getElementById("menu1st").textContent
+const menuUppercase = document.getElementById("menu1st").textContent;
 
 // const uppercase = function (menuUppercase){
 //     return menuUppercase.toUpperCase();
@@ -11,3 +11,13 @@ menuUppercase.toUpperCase();
 console.log(typeof menuUppercase);
 
 console.log(menuUppercase.toUpperCase());
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});

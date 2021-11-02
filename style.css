@@ -1,12 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.menu{
-    margin-top: 70px;
+.menu {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     /* position: absolute; */
@@ -14,8 +13,8 @@
     text-transform: uppercase;
 }
 
-.menu p{
-     background-color: rgb(255, 255, 255);
+.menu p {
+    background-color: rgb(255, 255, 255);
     /* color: rgb(0, 0, 0); */
     padding: 10px;
     margin: 10px;
@@ -29,10 +28,10 @@
     box-shadow: 0px 0px 5px #fff;
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
      */
-     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.week{
+.week {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -41,27 +40,23 @@
     padding: 5px;
 }
 
-.week .line1 , .line2{
+.week .line1, .line2 {
     display: flex;
     flex-direction: row;
-    
 }
 
-.line1 p ,.line2 p{  
-/* padding: 0 10px; */
-background-color: rgb(247, 233, 233);
-padding: 10px;
-margin-left: 2px;
-margin-top: 2px;
+.line1 a, .line2 a {
+    /* padding: 0 10px; */
+    background-color: rgb(247, 233, 233);
+    padding: 10px;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-decoration: none;
 }
-
-
 
 /* .line1 p:second-child{
     background-color: rgb(184, 44, 44);
     } */
-
-
 
 /* .mondaySchedule-2nd,.mondaySchedule-4th{
      display: flex;
@@ -73,36 +68,33 @@ margin-top: 2px;
     gap:12px;
 } */
 
-.time{
+.time {
     color: rgb(0, 0, 0);
     font-weight: bold;
-    
-}
-
-.time::before{
-    content: "⌚";
-}
-
-
-.subject{
     text-transform: uppercase;
 }
 
-.subject::before{
+.time::before {
+    content: "⌚";
+}
+
+.subject {
+    text-transform: uppercase;
+}
+
+.subject::before {
     content: "➖";
 }
 
-.techerName::before{
-content: "👨‍🏫";
+.techerName::before {
+    content: "👨‍🏫";
 }
-
 
 /* .MondaySchedule,.TuedaySchedule,.WednesdaySchedule,.ThrusdaySchedule,.FridaySchedule,.SaturdaySchedule{
     display: flex;
     flex-direction: column;
     gap:12px;
 }  */
-    
 
 /* .container2{
     display: flex;
@@ -114,24 +106,175 @@ content: "👨‍🏫";
     gap: 12px;
 } */
 
-.container2{
+/* .container2 {
     margin-top: 30px;
-}
+} */
 
-.container2 .left{
+.container2 .left {
     display: flex;
     flex-direction: column;
-    gap:12px;
-    margin-left: 20%;
+    gap: 12px;
+    margin-left: 12%;
     margin-top: 50px;
     color: blue;
 }
 
-.container2 .right{
+.container2 .right {
     display: flex;
     flex-direction: column;
-    gap:12px;
-    margin-left: 55%;
+    gap: 12px;
+    margin-left: 45%;
     margin-top: 50px;
-    color:rgb(172, 41, 41);
+    color: rgb(172, 41, 41);
+}
+
+.MondaySchedule, .TuedaySchedule, .WednesdaySchedule, .ThrusdaySchedule, .FridaySchedule, .SaturdaySchedule {
+    padding-top: 14px;
+    padding-bottom: 50px;
+    position: relative;
+    background-color: #FFCAB1;
+    z-index: 2;
+}
+
+.MondaySchedule::after {
+    position: absolute;
+    content: "MONDAY";
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+    z-index: -1;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.TuedaySchedule {
+    background-color: #C1D7AE;
+}
+
+.WednesdaySchedule {
+    background-color: #ECDCB0;
+}
+
+.ThrusdaySchedule {
+    background-color: #8CC084;
+}
+
+.FridaySchedule {
+    background-color: #968E85;
+}
+
+.SaturdaySchedule {
+    background-color: #ECDCB0;
+}
+
+h1 {
+    /* align-items: center; */
+    text-align: center;
+    padding-top: 35px;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #BBB;
+    background: #EEE;
+}
+
+.ribbon {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+
+.ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
+
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79A70A;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #79A70A;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+
+.left {
+    position: relative;
+    background: #ffffff;
+    border: 4px solid #c2e1f5;
+    padding: 18px;
+    display: inline-block;
+}
+
+.left:after, .arrow_box:before {
+    /* left: 100%; */
+    /* top: 50%; */
+    border: solid transparent;
+    /* content: ""; */
+    /* height: 0;
+    width: 0; */
+    position: absolute;
+    pointer-events: none;
+}
+
+.left:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #ffffff;
+    border-width: 2px;
+    margin-top: -2px;
+}
+
+.left:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-left-color: #c2e1f5;
+    border-width: 8px;
+    margin-top: -8px;
 }
