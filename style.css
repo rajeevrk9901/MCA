@@ -49,54 +49,89 @@
 
 .line1 p ,.line2 p{  
 /* padding: 0 10px; */
-background-color: rgb(184, 44, 44);
-padding: 5px;
+background-color: rgb(247, 233, 233);
+padding: 10px;
 margin-left: 2px;
 margin-top: 2px;
 }
 
 
 
-.line1 p:second-child{
+/* .line1 p:second-child{
     background-color: rgb(184, 44, 44);
-    }
+    } */
 
-.container2,.MondaySchedule{
-    
-padding: 12px;
-/* margin-top: 12px; */
-    }
 
-.MondaySchedule,.TuedaySchedule,.WednesdaySchedule,.ThrusdaySchedule,.FridaySchedule,.SaturdaySchedule{
-    display: flex;
-    flex-direction: column;
-    gap:12px;
-} 
-    
 
-.mondaySchedule-2nd,.mondaySchedule-4th{
+/* .mondaySchedule-2nd,.mondaySchedule-4th{
      display: flex;
-    /* flex: 20%; */
+    
     flex-direction: column;
     justify-content: right;
     margin-left: 60%;
     color:rgb(172, 41, 41);
     gap:12px;
-}
+} */
 
 .time{
-    color: rgb(61, 119, 119);
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    
+}
+
+.time::before{
+    content: "⌚";
 }
 
 
-.MondaySchedule,.TuedaySchedule,.WednesdaySchedule,.ThrusdaySchedule,.FridaySchedule,.SaturdaySchedule{
+.subject{
+    text-transform: uppercase;
+}
+
+.subject::before{
+    content: "➖";
+}
+
+.techerName::before{
+content: "👨‍🏫";
+}
+
+
+/* .MondaySchedule,.TuedaySchedule,.WednesdaySchedule,.ThrusdaySchedule,.FridaySchedule,.SaturdaySchedule{
     display: flex;
     flex-direction: column;
     gap:12px;
-} 
+}  */
     
 
-.mondaySchedule-3rd{
+/* .container2{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+} */
+
+/* .mondaySchedule-3rd{
     gap: 12px;
+} */
+
+.container2{
+    margin-top: 30px;
+}
+
+.container2 .left{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin-left: 20%;
+    margin-top: 50px;
+    color: blue;
+}
+
+.container2 .right{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin-left: 55%;
+    margin-top: 50px;
+    color:rgb(172, 41, 41);
 }
