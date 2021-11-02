@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    text-shadow: #fff;
+    text-transform: uppercase;
+}
+
+.menu p{
+     background-color: rgb(255, 255, 255);
+    /* color: rgb(0, 0, 0); */
+    padding: 10px;
+    margin: 10px;
+    display: inline-flex;
+    border-radius: 20%;
+    position: relative;
+    border: 2px solid rgb(255, 85, 85);
+    /* top: 50%;
+    bottom: 50%;
+    transform: translate(-50px , -50px); */
+    box-shadow: 0px 0px 5px #fff;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     */
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.week{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5px;
+}
+
+.week .line1 , .line2{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.line1 p ,.line2 p{  
+/* padding: 0 10px; */
+background-color: rgb(184, 44, 44);
+padding: 5px;
+margin-left: 2px;
+margin-top: 2px;
+}
+
+
+
+.line1 p:second-child{
+    background-color: rgb(184, 44, 44);
+    }
+
+.container2,.MondaySchedule{
+    
+padding: 12px;
+/* margin-top: 12px; */
+    }
+
+.MondaySchedule,.TuedaySchedule,.WednesdaySchedule,.ThrusdaySchedule,.FridaySchedule,.SaturdaySchedule{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+} 
+    
+
+.mondaySchedule-2nd,.mondaySchedule-4th{
+     display: flex;
+    /* flex: 20%; */
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 60%;
+    color:rgb(172, 41, 41);
+    gap:12px;
+}
+
+.time{
+    color: rgb(61, 119, 119);
+    font-weight: bold;
+}
+
+
+.MondaySchedule,.TuedaySchedule,.WednesdaySchedule,.ThrusdaySchedule,.FridaySchedule,.SaturdaySchedule{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+} 
+    
+
+.mondaySchedule-3rd{
+    gap: 12px;
+}
