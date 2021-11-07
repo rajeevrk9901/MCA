@@ -1,17 +1,3 @@
-const menuUppercase = document.getElementById("menu1st").textContent;
-
-// const uppercase = function (menuUppercase){
-//     return menuUppercase.toUpperCase();
-// }
-
-// uppercase();
-
-menuUppercase.toUpperCase();
-
-console.log(typeof menuUppercase);
-
-console.log(menuUppercase.toUpperCase());
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -43,3 +29,38 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// const SyllabusCNfisrst = document.querySelector("#Syl_CN_first");
+
+// console.log(SyllabusCNfisrst);
+// console.log(document.getElementById("Unit_first"));
+
+// const syllabusShow = $("#Unit_first");
+
+const Myfunction = function () {
+  document.getElementById("Unit_first").style.display = "block";
+};
+
+const closefunction = function () {
+  document.getElementById("Unit_first").style.display = "none";
+};
+
+const comrMathcls = document.querySelector(".comrMath");
+
+console.log(comrMathcls);
+
+document.querySelector("#Syl_CN_first").addEventListener("click", function () {
+  console.log("clicked");
+  comrMathcls.classList.toggle("active");
+});
+
+document
+  .querySelector("#Syl_OOPAD_first")
+  .addEventListener("click", function () {
+    console.log("clicked");
+    document.querySelector(".oopad").classList.toggle("active");
+  });
+
+// const Myfunction = function () {
+//   document.getElementById("Unit_first").style.display = "None";
+//

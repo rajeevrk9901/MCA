@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -37,25 +42,76 @@
         <h1>MONDAY</h1>
         <div class="mondaySchedule-1st left">
           <p class="time">1:50 to 2:40 PM</p>
-          <p class="subject">Computer Network</p>
+          <p class="subject" id="Syl_CN_first">Computer Network</p>
           <p class="techerName">Santosh Jha</p>
         </div>
+        <div id="Unit_first_CN" class="comrMath active">
+          <div class="syllabus_Conatiner">
+            <h2>Unit - I</h2>
+            <!-- <button onclick="closefunction()" id="close_first" class="btn">
+              <i class="fa fa-close"></i> Close
+            </button> -->
+          </div><p>
+Introduction to computer Networking concepts: Local, Metropolitan and Wide Area
+Networks; Telecommunications and Cellular Networks Overview, Physical Layer -
+Basics of communications, Transmission Media, Protocols and standards, Standards
+Organizations, Line Configuration, Topology, Transmission mode, Networks Signals,
+Wired and Wireless media including copper cables, optical fiber and Wireless,
+Multiplexing and switching methods.</p>
+</div>
         <div class="mondaySchedule-2nd right">
           <p class="time">3:00 to 3:50 PM</p>
-          <p class="subject">Computer Math</p>
+          <p class="subject" onclick="Myfunction()">Computer Math</p>
           <p class="techerName">Vijay Kumar</p>
+        </div>
+        <div id="Unit_first" class="comrMath active">
+          <div class="syllabus_Conatiner">
+            <h2> Unit - I </h2>
+            <button onclick="closefunction()" id="close_first" class="btn">
+              <i class="fa fa-close"></i> Close
+            </button>
+          </div>
+          Graph Theory: Basic terminology, multigraphs and weighted graphs,
+          paths and circuits,</br> searching techniques: BFS, DFS and their
+          applications, shortest paths in weighted graphs, Eulerian paths and
+          circuits, Hamiltonian paths and circuits, Traveling Salesperson
+          problem, planar graphs, trees and rooted trees, prefix codes, minimal
+          spanning trees, cut sets, directed graphs.
         </div>
         <div class="mondaySchedule-3rd left">
           <p class="time">3:50 to 4:40 PM</p>
-          <p class="subject">OOPAD</p>
+          <p class="subject" id="Syl_OOPAD_first">OOPAD</p>
           <p class="techerName">Ramesh Kumar</p>
         </div>
+        <div id="Unit_first_OOPAD" class="oopad active">
+          <div class="syllabus_Conatiner">
+            <h2>Unit - I</h2>
+            <!-- <button onclick="closefunction()" id="close_first" class="btn">
+              <i class="fa fa-close"></i> Close
+            </button> -->
+          </div><p>
+            Concepts, Operator Overloading, Friends: Concepts in object-oriented
+            programming, Classes and Objects, C++programming basics, Object-oriented analysis,
+            Object-oriented Design methods, Operator Overloading, Friend functions and operators.</p>
+</div>
         <div class="mondaySchedule-4th right">
           <p class="time">4:40 to 5:30 PM</p>
           <p class="subject">Advance Database</p>
           <p class="techerName">Anant Kumar</p>
         </div>
+        <div id="Unit_first_OOPAD" class="oopad active">
+          <div class="syllabus_Conatiner">
+            <h2>Unit - I</h2>
+            <!-- <button onclick="closefunction()" id="close_first" class="btn">
+              <i class="fa fa-close"></i> Close
+            </button> -->
+          </div><p>
+            Concepts, Operator Overloading, Friends: Concepts in object-oriented
+            programming, Classes and Objects, C++programming basics, Object-oriented analysis,
+            Object-oriented Design methods, Operator Overloading, Friend functions and operators.</p>
+</div>
       </div>
+
       <div class="TuedaySchedule" id="secondWeek">
         <h1>TUESDAY</h1>
         <div class="TuedaySchedule-1st left">
@@ -83,18 +139,19 @@
         <h1>WEDNESDAY</h1>
         <div class="WednesdaySchedule-1st left">
           <p class="time">1:50 to 2:40 PM</p>
-          <p class="subject">C.O.A</p>
-          <p class="techerName">Raju Kumar Kumar</p>
-        </div>
-        <div class="WednesdaySchedule-2nd right">
-          <p class="time">3:00 to 3:50 PM</p>
+
           <p class="subject">Computer Network</p>
           <p class="techerName">Santosh Jha</p>
         </div>
-        <div class="WednesdaySchedule-3rd left">
-          <p class="time">3:50 to 4:40 PM</p>
+        <div class="WednesdaySchedule-2nd right">
+          <p class="time">3:00 to 3:50 PM</p>
           <p class="subject">Modern OS</p>
           <p class="techerName">Shakti Pandey</p>
+        </div>
+        <div class="WednesdaySchedule-3rd left">
+          <p class="time">3:50 to 4:40 PM</p>
+          <p class="subject">C.O.A</p>
+          <p class="techerName">Raju Kumar</p>
         </div>
         <div class="WednesdaySchedule-4th right">
           <p class="time">4:40 to 5:30 PM</p>
@@ -177,6 +234,6 @@
     <div class="ribbon"><span>NEW</span></div>
 
     <script src="script.js"></script>
-    <script src="Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <!-- <script src="Scripts/jquery-1.11.3.min.js" type="text/javascript"></script> -->
   </body>
 </html>
