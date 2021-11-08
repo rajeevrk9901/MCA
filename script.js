@@ -61,6 +61,8 @@ document
     document.querySelector(".oopad").classList.toggle("active");
   });
 
-// const Myfunction = function () {
-//   document.getElementById("Unit_first").style.display = "None";
-//
+document
+  .querySelector("#Syl_first_advDatabase")
+  .addEventListener("click", function () {
+    document.querySelector(".advD").classList.toggle("active");
+  });

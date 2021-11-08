@@ -15,25 +15,24 @@ body {
     /* position: absolute; */
     text-shadow: #fff;
     text-transform: uppercase;
+    padding: 12px;
+    gap: 12px;
 }
 
-.menu p {
+.bigfont-first {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .menu p {
     background-color: rgb(255, 255, 255);
-    /* color: rgb(0, 0, 0); */
     padding: 10px;
     margin: 10px;
-    display: inline-flex;
     border-radius: 20%;
     position: relative;
-    border: 2px solid rgb(255, 85, 85);
-    /* top: 50%;
-    bottom: 50%;
-    transform: translate(-50px , -50px); */
-    box-shadow: 0px 0px 5px #fff;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-     */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+} */
 
 .week {
     text-transform: uppercase;
@@ -258,7 +257,7 @@ footer {
     margin-left: 10px;
 }
 
-#Unit_first_OOPAD {
+#Unit_first_OOPAD, #Unit_first_advDatabase {
     margin-top: 20px;
     padding: 10px;
     height: 200px;
@@ -323,11 +322,8 @@ footer {
     opacity: 60%;
 }
 
-div.comrMath, div.oopad {
-    /* border-top: 2px solid blue;
-    border-bottom: 2px solid blue; */
+div.comrMath, div.oopad, div.advD {
     outline-style: double;
-    /* padding-bottom: 10px; */
 }
 
 .comrMath p, .oopad p {
